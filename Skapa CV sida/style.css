@@ -1,0 +1,109 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.header {
+  background-color: rgb(128, 128, 128);
+  color: white;
+  width: 100%;
+  height: 5%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+}
+.profilesection {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  flex-direction: column;
+  max-height: 400px;
+  flex: 1;
+}
+
+.myimage {
+  width: 100%;
+  max-height: 200px;
+  border-radius: 10px;
+}
+.profilepresentation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.projectsection {
+  width: 100%;
+  /* height: 400px; */
+  padding: 10px;
+}
+.projectgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 350px;
+  gap: 10px;
+}
+.projectcard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.projectcardtop {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projectcardimage {
+  width: 100%;
+}
+
+.footer {
+  background-color: rgb(128, 128, 128);
+  color: white;
+  width: 100%;
+  height: 5%;
+}
+@media screen and (min-width: 600px) {
+  .profilesection {
+    flex-direction: row;
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    max-height: 400px;
+  }
+  .projectgrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .myimage {
+    max-height: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
